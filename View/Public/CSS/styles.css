@@ -1,0 +1,123 @@
+* {
+  font-family: Sitka Display, sans-serif;
+}
+
+.page-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 125px 1fr;
+      grid-template-rows: 125px 1fr;
+  background-color: #ffffff;
+}
+
+.navbar-container {
+  grid-row: 1/-1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  background-color: #77111E;
+}
+
+.navbar-container h2 {
+  margin: auto;
+  color: white;
+}
+
+.age-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 75px auto;
+      grid-template-rows: 75px auto;
+}
+
+.age-grid h2 {
+  grid-row: 1/-1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  margin: auto;
+  font-size: 3rem;
+}
+
+/* quick reset so all our padding is the right size */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* add some spacing */
+body {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* limit the width and center */
+.age {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+}
+
+.age-button {
+  background: #9f1224;
+  border: 1px solid #111;
+  /* black border */
+  padding: 10px;
+  color: #EEE;
+  /* white text */
+  border-radius: 5px;
+  /* rounded corners */
+  font-size: 22px;
+  /* larger fonts */
+  cursor: pointer;
+  /* make it look clickable */
+  height: 100px;
+}
+
+.age input {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #9f1224;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
+}
+
+.age-buttons {
+  /* small spacing within our container */
+  padding: 20px;
+  /* the grid stuff! */
+  display: -ms-grid;
+  display: grid;
+  /* create 4 columns */
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.age-button:hover {
+  background-color: #022c68;
+}
+/*# sourceMappingURL=styles.css.map */
